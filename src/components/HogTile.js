@@ -26,13 +26,13 @@ class HogTile extends React.Component {
     const imageName = this.props.hog.name.toLowerCase().replace(/ /g, "_")
     // console.log("image name is", imageName)
     return (
-      <div class="ui link cards">
-        <div class="card" onClick={this.clickToggle}>
-          <div class="image">
+      <div className="ui link cards">
+        <div className="card" onClick={this.clickToggle}>
+          <div className="image">
             <img src={require(`../hog-imgs/${imageName}.jpg`)} alt={imageName} />
           </div>
-          <div class="content">
-            <div class="header">
+          <div className="content">
+            <div className="header">
               Name: {this.props.hog.name}
             </div>
           </div>

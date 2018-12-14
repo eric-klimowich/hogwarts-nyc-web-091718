@@ -5,23 +5,23 @@ const HogDetail = (props) => {
 
   const bestMedal = props.oneHog['highest medal achieved']
 
-  console.log(weightRatio, bestMedal)
+  // console.log(weightRatio, bestMedal)
 
   return (
-    <div class="extra content">
-      <div class="meta">
+    <div className="extra content">
+      <div className="meta">
         <a>Greased?: {props.oneHog.greased ? "Yes" : "No"}</a>
       </div>
-      <div class="description">
+      <div className="description">
         Specialty: {props.oneHog.specialty}
       </div>
-      <span class="right floated">
+      <div className="right floated">
         Weight Ratio: {weightRatio}
-      </span>
-      <span>
-        <i class="user icon"></i>
+      </div>
+      <div>
+        <i className="trophy icon"></i>
           Highest Medal: {bestMedal}
-      </span>
+      </div>
     </div>
   )
 }
